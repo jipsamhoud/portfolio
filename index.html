@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Jip Samhoud — Brand Builder · Commercial Leader · Pioneer in Creativity × Technology</title>
+  <meta name="description" content="Jip Samhoud builds lovebrands that move society forward. 15 years founding companies at the intersection of creativity, technology and AI — from the world's first VR cinema to Let's Copilot.">
+  <meta property="og:title" content="Jip Samhoud — Brand Builder · Commercial Leader · Pioneer in Creativity × Technology">
+  <meta property="og:description" content="Building lovebrands that move society forward. Creativity × technology × AI, at commercial scale.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jipsamhoud.nl/assets/og-card.jpg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="canonical" href="https://jipsamhoud.nl/">
+  <meta property="og:url" content="https://jipsamhoud.nl/">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jip Samhoud — Brand Builder · Commercial Leader · Pioneer in Creativity × Technology">
+  <meta name="twitter:image" content="https://jipsamhoud.nl/assets/og-card.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jip Samhoud","url":"https://jipsamhoud.nl","image":"https://jipsamhoud.nl/assets/og-card.jpg","jobTitle":"Brand Builder, Commercial Leader & Pioneer in Creativity × Technology","worksFor":[{"@type":"Organization","name":"&samhoud","url":"https://www.samhoud.com"},{"@type":"Organization","name":"&ranj serious games","url":"https://www.ranj.com"},{"@type":"Organization","name":"Let's Copilot","url":"https://www.letscopilot.com"}],"alumniOf":["Stanford Graduate School of Business","Columbia Business School","Kellogg School of Management","Harvard Business School","Miami Ad School"],"address":{"@type":"PostalAddress","addressLocality":"Amsterdam","addressCountry":"NL"},"sameAs":["https://www.linkedin.com/in/jipsamhoud","https://www.samhoud.com","https://www.ranj.com","https://www.letscopilot.com"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Archivo+Expanded:wght@500;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f4f3ef; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { opacity: 0.7; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes heroRise { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes heroFade { from { opacity: 0; } to { opacity: 1; } }
+    @media (max-width: 760px) {
+      #site-nav { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
+      [data-hero-caption] { position: static !important; max-width: 100% !important; margin-top: 10px; animation: none !important; opacity: 1 !important; transform: none !important; }
+      [data-hero-photo-wrap] { width: 92vw !important; margin-top: -0.3em !important; }
+      #top { display: flex; flex-direction: column; }
+      [data-hero-word1] { font-size: 19.5vw !important; order: 1; }
+      [data-hero-word2] { font-size: 19.5vw !important; order: 2; margin-top: 0 !important; }
+      [data-hero-photo-wrap] { order: 3; margin-top: 18px !important; }
+      [data-hero-tagline] { order: 4; }
+      [data-ai-tile] { order: -1; }
+    }
+    @media (hover: hover) {
+      [data-marquee]:hover { animation-play-state: paused; }
+      [data-tl-row] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    }
+  </style>
+</helmet>
+
+<div style="background: #f4f3ef; color: #101014; font-family: 'Archivo', sans-serif; overflow-x: clip;">
+
+  <div id="scroll-progress" style="position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: #3554f4; z-index: 100;"></div>
+
+  <!-- ═══ NAV ═══ -->
+  <div id="site-nav" style="position: sticky; top: 0; z-index: 50; display: flex; justify-content: space-between; align-items: center; padding: 14px clamp(20px, 4vw, 56px); background: rgba(244,243,239,0.93); backdrop-filter: blur(8px); border-bottom: 1px solid #101014;">
+    <a href="#top" style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.08em;">JIP&nbsp;SAMHOUD</a>
+    <div style="display: flex; gap: clamp(12px, 2.4vw, 32px); align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em;">
+      <a href="#work">WORK</a>
+      <a href="#story">STORY</a>
+      <a href="#leadership">LEADERSHIP</a>
+      <a href="#photography">CREATIVE</a>
+      <a href="#contact">CONTACT</a>
+      
+    </div>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <div id="top" data-screen-label="Hero" style="position: relative;">
+    <div data-hero-word1 style="text-align: center; padding-top: clamp(14px, 2vw, 28px); font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(80px, 17.5vw, 260px); line-height: 0.84; letter-spacing: -0.05em;"><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.05s both;">J</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.14s both;">I</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.23s both;">P</span></div>
+    <div data-hero-photo-wrap style="position: relative; width: min(640px, 80vw); margin: -0.45em auto 0 auto; animation: heroFade 1.4s 0.25s both;">
+      <div style="position: relative; width: 100%; aspect-ratio: 640/600; overflow: hidden;">
+        <img src="assets/image1.webp" alt="Jip Samhoud" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%; filter: grayscale(1) contrast(1.16); display: block;">
+        <img data-hero-fade src="assets/image4.webp" alt="Jip Samhoud on stage" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; filter: grayscale(1) contrast(1.15) brightness(0.95); opacity: 0; transition: opacity 1.6s ease;">
+        <img data-hero-fade src="assets/maxima-vr.webp" alt="Queen Máxima with Jip Samhoud" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; filter: grayscale(1) contrast(1.15); opacity: 0; transition: opacity 1.6s ease;">
+        <img data-hero-fade src="assets/image13.webp" alt="Nightfall VR ballet" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 42% 20%; filter: grayscale(1) contrast(1.2) brightness(1.05); opacity: 0; transition: opacity 1.6s ease;">
+        <img data-hero-fade src="assets/vr-cinema-audience.webp" alt="The VR Cinema audience" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15); opacity: 0; transition: opacity 1.6s ease;">
+      </div>
+      <div data-hero-caption style="position: absolute; left: clamp(-120px, -14vw, -60px); bottom: 18%; background: #f4f3ef; border: 1px solid #101014; padding: 16px 20px; max-width: 230px; animation: heroRise 0.9s 0.8s both;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.26em; color: #3554f4; margin-bottom: 8px;">15 YEARS</div>
+        <div style="font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5;">Founding companies &amp; shipping products that reach millions</div>
+      </div>
+      <div data-hero-caption style="position: absolute; right: clamp(-120px, -14vw, -60px); top: 22%; background: #101014; color: #f4f3ef; padding: 16px 20px; max-width: 230px; animation: heroRise 0.9s 1s both;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.26em; color: #98a4e8; margin-bottom: 8px;">AMSTERDAM</div>
+        <div style="font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5;">Co-owner <a href="https://www.samhoud.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">&amp;samhoud</a> · Co-owner <a href="https://www.ranj.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">&amp;ranj</a> · Co-founder <a href="https://www.letscopilot.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">Let's Copilot</a></div>
+      </div>
+    </div>
+    <div style="text-align: center; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 9.8vw, 146px); line-height: 0.9; letter-spacing: -0.04em; color: #3554f4; margin-top: -0.45em; position: relative;" data-hero-word2><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s both;">S</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.46s both;">A</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.52s both;">M</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.58s both;">H</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.64s both;">O</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.7s both;">U</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.76s both;">D</span></div>
+    <div data-hero-tagline style="text-align: center; margin: clamp(20px, 3vw, 36px) auto 0 auto; font-family: 'JetBrains Mono', monospace; font-size: clamp(11px, 1.3vw, 13px); letter-spacing: 0.3em; animation: heroFade 1s 1.2s both;">BRAND BUILDER — COMMERCIAL LEADER — PIONEER IN CREATIVITY × TECHNOLOGY</div>
+  </div>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div style="border-top: 2px solid #101014; border-bottom: 2px solid #101014; overflow: hidden; margin-top: clamp(28px, 4vw, 52px);">
+    <div data-marquee style="display: flex; width: max-content; animation: marquee 26s linear infinite; padding: 13px 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; white-space: nowrap;">
+      <span style="padding-right: 48px;">CO-OWNER &amp;SAMHOUD — CO-FOUNDER LET'S COPILOT — CHAIRMAN DUTCH ADVERTISING COMMUNITY — ADVISOR AI ADOPTION &amp; STRATEGY — MEMBER NL2025 — FOUNDER THE VR CINEMA —&nbsp;</span>
+      <span style="padding-right: 48px;">CO-OWNER &amp;SAMHOUD — CO-FOUNDER LET'S COPILOT — CHAIRMAN DUTCH ADVERTISING COMMUNITY — ADVISOR AI ADOPTION &amp; STRATEGY — MEMBER NL2025 — FOUNDER THE VR CINEMA —&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ═══ STATEMENT ═══ -->
+  <div data-screen-label="Statement" style="max-width: 1440px; margin: 0 auto; padding: clamp(64px, 9vw, 140px) clamp(20px, 4vw, 56px);">
+    <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(30px, 4.6vw, 64px); line-height: 1.16; max-width: 1180px;">"From first idea to millions of users — I build brands and ventures that <em style="font-style: italic; color: #3554f4;">move society forward</em>."</div>
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #101014; border: 1px solid #101014; margin-top: clamp(40px, 5vw, 72px);">
+      <div style="background: #f4f3ef; padding: 28px 32px;">
+        <div data-stat style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 3.4vw, 48px); line-height: 1;">4×</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; margin-top: 12px; color: #45454d;">COMPANIES FOUNDED</div>
+      </div>
+      <div style="background: #f4f3ef; padding: 28px 32px;">
+        <div data-stat style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 3.4vw, 48px); line-height: 1;">10M+</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; margin-top: 12px; color: #45454d;">APP DOWNLOADS</div>
+      </div>
+      <div style="background: #f4f3ef; padding: 28px 32px;">
+        <div data-stat style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 3.4vw, 48px); line-height: 1;">€30M+</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; margin-top: 12px; color: #45454d;">IN NEW BUSINESS WON</div>
+      </div>
+      <div style="background: #101014; color: #f4f3ef; padding: 28px 32px;">
+        <div data-stat style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 3.4vw, 48px); line-height: 1; color: #98a4e8;">€2.2M</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; margin-top: 12px; color: #9d9da6;">RECORD FUNDRAISING, D66 2025</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PRESS ═══ -->
+  <div data-screen-label="Press" style="border-top: 1px solid #101014;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(28px, 4vw, 48px) clamp(20px, 4vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+      <div style="display: flex; align-items: baseline; gap: 14px;">
+        <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(26px, 2.6vw, 38px); line-height: 1; color: #3554f4;">3BN</span>
+        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #3554f4;">MEDIA REACH — WORK FEATURED IN</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: clamp(18px, 3vw, 44px); font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(15px, 1.5vw, 21px); color: #101014;">
+        <span>BBC</span><span>THE ECONOMIST</span><span>DIE WELT</span><span>AFP</span><span style="color: #45454d;">SCMP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FORMULA ═══ -->
+  <div id="formula" data-screen-label="Formula" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(20px, 3vw, 36px);">
+        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(28px, 5vw, 72px); letter-spacing: -0.03em; line-height: 1;">CREATIVITY <span style="color: #98a4e8;">×</span> TECHNOLOGY</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #9d9da6;">BUILDING ON EVERY NEW WAVE</div>
+      </div>
+      <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(18px, 1.9vw, 26px); line-height: 1.6; max-width: 880px; margin-bottom: clamp(36px, 5vw, 60px); color: #b9b9c0;">Every venture follows the same equation: a creative concept, built on frontier technology, landing at commercial scale. I've built at the front of every wave — and AI is the biggest one yet.</div>
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: rgba(244,243,239,0.3); border: 1px solid rgba(244,243,239,0.3);">
+        <div style="background: #101014; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #98a4e8;">2013 — APPS &amp; AR</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">MOBILE &amp; AUGMENTED REALITY</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #9d9da6;">Pioneered AR journeys before it was standard — AH Techie, VodafoneZiggo, Intergamma. 10M+ downloads.</div>
+        </div>
+        <div style="background: #101014; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #98a4e8;">2015 — VR</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">VIRTUAL REALITY</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #9d9da6;">The world's first VR cinema and VR ballet — turned an emerging technology into a cultural institution.</div>
+        </div>
+        <div style="background: #101014; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #98a4e8;">2018 — GAMING</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">SERIOUS GAMING</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #9d9da6;">Behaviour change through play, at national scale — from kids' banking to loyalty engines.</div>
+        </div>
+        <div data-ai-tile style="background: #3554f4; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #101014;">2024 — NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">ARTIFICIAL INTELLIGENCE</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #dfe3fd;">Co-founded Let's Copilot, keynote speaker on AI adoption, Stanford GSB AI &amp; Innovation. Technology does not win — adoption does.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ WORK ═══ -->
+  <div id="work" data-screen-label="Selected Work" style="border-top: 1px solid #101014;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
+        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">SELECTED WORK</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">BRANDS, VENTURES &amp; MOVEMENTS</div>
+      </div>
+
+      <!-- Case 01 -->
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border: 1px solid #101014; margin-bottom: clamp(24px, 3vw, 40px); transition: border-color 0.3s, box-shadow 0.3s;" style-hover="border-color: #3554f4; box-shadow: 0 18px 48px rgba(53,84,244,0.16)">
+        <div style="position: relative; min-height: 320px; overflow: hidden;">
+          <img data-parallax="1" loading="lazy" src="assets/image2.webp" alt="Kids playing with AH Dino's" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: clamp(28px, 3.5vw, 52px); display: flex; flex-direction: column; gap: 18px; border-left: 1px solid #101014;">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #3554f4;"><span>№ 01 — FLAGSHIP</span><span>2013–2023</span></div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em;">ALBERT HEIJN'S KIDS LOYALTY ENGINE</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.7; color: #45454d;">Fifteen campaigns over a decade — Techie, Dino's, Space, Foodstars — reaching millions of children. Conceived, built and scaled as founder-CEO of &amp;samhoud creative tech.</div>
+          <div style="margin-top: auto; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #101014; border-top: 1px solid #101014; padding-top: 16px;">
+            <span>5M+ DOWNLOADS</span><span>7M ROBOTS PROGRAMMED</span><span>5+ COUNTRIES LICENSED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 02 -->
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border: 1px solid #101014; margin-bottom: clamp(24px, 3vw, 40px); transition: border-color 0.3s, box-shadow 0.3s;" style-hover="border-color: #3554f4; box-shadow: 0 18px 48px rgba(53,84,244,0.16)">
+        <div style="padding: clamp(28px, 3.5vw, 52px); display: flex; flex-direction: column; gap: 18px;">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #3554f4;"><span>№ 02 — WORLD FIRST</span><span>2015–2018</span></div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em;">THE WORLD'S FIRST VR CINEMA</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.7; color: #45454d;">Built from scratch as a standalone cultural concept, before VR was mainstream. Opened in Amsterdam, scaled to 15+ international locations, produced 4 VR feature films.</div>
+          <div style="margin-top: auto; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; border-top: 1px solid #101014; padding-top: 16px;">
+            <span>75K+ VISITORS YEAR ONE</span><span>3BN MEDIA REACH</span><span>THE ECONOMIST · AFP</span>
+          </div>
+        </div>
+        <div style="position: relative; min-height: 320px; border-left: 1px solid #101014; overflow: hidden;">
+          <img data-parallax="1" loading="lazy" src="assets/vr-cinema-audience.webp" alt="Audience at The VR Cinema Amsterdam" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Case 03 -->
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border: 1px solid #101014; margin-bottom: clamp(24px, 3vw, 40px); transition: border-color 0.3s, box-shadow 0.3s;" style-hover="border-color: #3554f4; box-shadow: 0 18px 48px rgba(53,84,244,0.16)">
+        <div style="position: relative; min-height: 320px; overflow: hidden;">
+          <img data-parallax="1" loading="lazy" src="assets/nadella-lets-copilot.webp" alt="Satya Nadella presenting Let's Copilot" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; left: 16px; bottom: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.22em; color: #f4f3ef; background: rgba(16,16,20,0.8); padding: 5px 9px;">SATYA NADELLA — MICROSOFT KEYNOTE</div>
+        </div>
+        <div style="padding: clamp(28px, 3.5vw, 52px); display: flex; flex-direction: column; gap: 18px; border-left: 1px solid #101014; background: #101014; color: #f4f3ef;">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #98a4e8;"><span>№ 03 — NOW</span><span>2024–NOW</span></div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em;">LET'S COPILOT — AI ADOPTION AT SCALE</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.7; color: #b9b9c0;">Technology does not win — adoption does. Co-founded a SaaS venture solving the AI adoption gap: gamified onboarding and personalised prompt delivery, driving habit formation at 100K+ user scale. Featured in a talk by Microsoft CEO Satya Nadella.</div>
+          <div style="margin-top: auto; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #f4f3ef; border-top: 1px solid rgba(244,243,239,0.3); padding-top: 16px;">
+            <span>100K+ USERS</span><span>SAAS · CSP PLATFORM</span><a href="https://www.letscopilot.com" target="_blank" rel="noopener" style="color: #98a4e8; text-decoration: underline; text-underline-offset: 3px;">LETSCOPILOT.COM ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 04 -->
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border: 1px solid #101014; margin-bottom: clamp(24px, 3vw, 40px); transition: border-color 0.3s, box-shadow 0.3s;" style-hover="border-color: #3554f4; box-shadow: 0 18px 48px rgba(53,84,244,0.16)">
+        <div style="padding: clamp(28px, 3.5vw, 52px); display: flex; flex-direction: column; gap: 18px;">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #3554f4;"><span>№ 04 — SOCIETY</span><span>2020–2021</span></div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em;">ON TRACK — LEARNING FROM THE BEST</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.7; color: #45454d;">A free, non-commercial micro-learning platform built with Ahold Delhaize and 50 partners during Covid — bite-sized daily video stories from relatable heroes across 12 life themes, as a way of giving back to society.</div>
+          <div style="margin-top: auto; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; border-top: 1px solid #101014; padding-top: 16px;">
+            <span>50 PARTNERS</span><span>12 LIFE THEMES</span><span>FREE FOR EVERYONE</span>
+          </div>
+        </div>
+        <div style="position: relative; min-height: 320px; border-left: 1px solid #101014; overflow: hidden;">
+          <img data-parallax="1" loading="lazy" src="assets/ontrack-app.webp" alt="On Track app" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Case 05 — Gaming -->
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); border: 1px solid #101014; margin-bottom: clamp(24px, 3vw, 40px); transition: border-color 0.3s, box-shadow 0.3s;" style-hover="border-color: #3554f4; box-shadow: 0 18px 48px rgba(53,84,244,0.16)">
+        <div style="position: relative; min-height: 320px; overflow: hidden;">
+          <img data-parallax="1" loading="lazy" src="assets/techie-robot-ar.webp" alt="AH Techie — AR robot game" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%;">
+        </div>
+        <div style="padding: clamp(28px, 3.5vw, 52px); display: flex; flex-direction: column; gap: 18px; border-left: 1px solid #101014;">
+          <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #3554f4;"><span>№ 05 — GAMING</span><span>2013–NOW</span></div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -0.02em;">GAMES THAT CHANGE BEHAVIOUR AT SCALE</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.7; color: #45454d;">Gaming runs through everything I build: gamified loyalty for Albert Heijn — 7M robots programmed in the Techie app, Dino's #1 in the App Store — and Rabobank's PinPin, the first PSD2 children's banking app with 500K+ users. Today as co-owner of &amp;ranj serious games, a 30+ year studio — Game Studio of the Year — applying play to behaviour change for Johns Hopkins Institute, War Child and Zurich.</div>
+          <div style="margin-top: auto; display: flex; gap: 28px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; border-top: 1px solid #101014; padding-top: 16px;">
+            <span>GAME STUDIO OF THE YEAR</span><a href="https://www.ranj.com" target="_blank" rel="noopener" style="color: #3554f4; text-decoration: underline; text-underline-offset: 3px;">RANJ.COM ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ STORY ═══ -->
+  <div id="story" data-screen-label="Story" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
+        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">THE STORY</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #9d9da6;">15 YEARS OF BUILDING</div>
+      </div>
+      <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.55; max-width: 900px; margin-bottom: clamp(40px, 5vw, 72px);">When technology becomes a commodity, the brand is what makes people choose. As an innovator I connect a brand's commercial, societal and public sides into one growth engine — with the creative vision to make something magical and the network to make it happen.</div>
+      <div style="display: flex; flex-direction: column;">
+        <div data-reveal data-tl-row style="display: grid; grid-template-columns: clamp(90px, 12vw, 160px) 1fr 2fr; gap: clamp(16px, 3vw, 48px); padding: 24px 0; border-top: 1px solid rgba(244,243,239,0.25); align-items: baseline;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #98a4e8;">2023 — NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.7vw, 23px);" data-preview="assets/image4.webp"><a href="https://www.samhoud.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 4px;">&amp;SAMHOUD</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: #b9b9c0;">Co-owner &amp; director — consultancy in vision, leadership &amp; transformation for boards across Europe, plus innovation &amp; venture building, across the 160 FTE group. № 1 in management consultancy (MT500).</div>
+        </div>
+        <div data-reveal data-tl-row style="display: grid; grid-template-columns: clamp(90px, 12vw, 160px) 1fr 2fr; gap: clamp(16px, 3vw, 48px); padding: 24px 0; border-top: 1px solid rgba(244,243,239,0.25); align-items: baseline;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #98a4e8;">2024 — NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.7vw, 23px);" data-preview="assets/nadella-lets-copilot.webp"><a href="https://www.letscopilot.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 4px;">LET'S COPILOT</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: #b9b9c0;">Co-founder — AI-adoption SaaS for Microsoft Copilot: product, go-to-market, partnerships.</div>
+        </div>
+        <div data-reveal data-tl-row style="display: grid; grid-template-columns: clamp(90px, 12vw, 160px) 1fr 2fr; gap: clamp(16px, 3vw, 48px); padding: 24px 0; border-top: 1px solid rgba(244,243,239,0.25); align-items: baseline;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #98a4e8;">2023 — NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.7vw, 23px);" data-preview="assets/techie-robot-ar.webp"><a href="https://www.ranj.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 4px;">&amp;RANJ SERIOUS GAMES</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: #b9b9c0;">Co-owner — Game Studio of the Year, 30+ years of behaviour change through play for Johns Hopkins Institute, War Child and Zurich.</div>
+        </div>
+        <div data-reveal data-tl-row style="display: grid; grid-template-columns: clamp(90px, 12vw, 160px) 1fr 2fr; gap: clamp(16px, 3vw, 48px); padding: 24px 0; border-top: 1px solid rgba(244,243,239,0.25); align-items: baseline;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #98a4e8;">2013 — 2023</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.7vw, 23px);" data-preview="assets/image2.webp">&amp;SAMHOUD CREATIVE TECH</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: #b9b9c0;">Founder &amp; CEO — 40+ FTE digital agency, <strong style="color: #f4f3ef;">Dutch Digital Agency of the Year</strong>. Clients: Albert Heijn, Samsung, Rabobank, VodafoneZiggo.</div>
+        </div>
+        <div data-reveal data-tl-row style="display: grid; grid-template-columns: clamp(90px, 12vw, 160px) 1fr 2fr; gap: clamp(16px, 3vw, 48px); padding: 24px 0; border-top: 1px solid rgba(244,243,239,0.25); border-bottom: 1px solid rgba(244,243,239,0.25); align-items: baseline;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #98a4e8;">2015 — 2018</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.7vw, 23px);" data-preview="assets/vr-cinema-audience.webp">THE VR CINEMA</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: #b9b9c0;">Founder &amp; CEO — the world's first permanent VR cinema, 15+ international locations.</div>
+        </div>
+      </div>
+      <div data-reveal style="margin-top: clamp(40px, 5vw, 64px);">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em; color: #98a4e8; margin-bottom: 20px;">EDUCATION</div>
+        <div style="display: flex; flex-wrap: wrap; gap: clamp(20px, 3vw, 40px);">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">STANFORD GSB</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">AI &amp; INNOVATION · 2023</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">COLUMBIA</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">VENTURE CAPITAL · 2022</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">KELLOGG</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">BRANDING · 2022</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">HARVARD BUSINESS SCHOOL</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">BREAKTHROUGH SERVICE · 2011</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">NFTS LONDON</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">ENTREPRENEURIAL PRODUCING · 2012</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: 15px;">MIAMI AD SCHOOL</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9d9da6;">ADVERTISING &amp; CREATIVITY · 2011</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ LEADERSHIP ═══ -->
+  <div id="leadership" data-screen-label="Leadership" style="border-top: 1px solid #101014;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
+        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">PUBLIC LEADERSHIP</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">LEADING FROM OUTSIDE</div>
+      </div>
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: #101014; border: 1px solid #101014;">
+        <div style="background: #3554f4; color: #f4f3ef; padding: clamp(28px, 3vw, 44px); display: flex; flex-direction: column; gap: 16px; grid-column: 1 / -1;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.26em;">D66 &amp; ROB JETTEN — 2024–NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(22px, 2.6vw, 40px); line-height: 1.08; letter-spacing: -0.02em; max-width: 900px;">AT THE HEART OF THE CAMPAIGN THAT MADE ROB JETTEN PRIME MINISTER</div>
+          <div style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.4vw, 19px); line-height: 1.7; max-width: 760px;">Strategic advisor and fundraising committee member — part of the record-breaking €2.2M fundraising campaign and closely involved in the national communications strategy behind D66's historic electoral result.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">CHAIRMAN · 2018–NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">DUTCH ADVERTISING COMMUNITY</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">A 102-year-old institution connecting agencies, brands and academia.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">MEMBER · 2016–NOW</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">NL2025</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Societal alliance of leading Dutch companies and institutions.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">SPEAKER</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">KEYNOTES</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Keynote speaker on AI, brand and society. Work covered by BBC, The Economist, Die Welt and AFP.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">PUBLIC ROLE · 2007–2008</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">YOUTH PRIME MINISTER</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Youth prime minister of the Netherlands and founder of the National Youth Cabinet.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ AWARDS ═══ -->
+  <div data-screen-label="Awards" style="border-top: 1px solid #101014;">
+    <div style="border-bottom: 2px solid #101014; overflow: hidden;">
+      <div style="display: flex; width: max-content; animation: marquee 24s linear infinite; padding: clamp(10px, 1.4vw, 18px) 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(28px, 3.6vw, 54px); letter-spacing: -0.02em; white-space: nowrap; color: #3554f4;">
+        <span style="padding-right: 64px;">AWARDS ✳ AWARDS ✳ AWARDS ✳ AWARDS ✳ AWARDS ✳&nbsp;</span>
+        <span style="padding-right: 64px;">AWARDS ✳ AWARDS ✳ AWARDS ✳ AWARDS ✳ AWARDS ✳&nbsp;</span>
+      </div>
+    </div>
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(48px, 6vw, 88px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: #101014; border: 1px solid #101014;">
+        <div style="background: #f4f3ef; padding: clamp(26px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 4.6vw, 68px); line-height: 1; color: #3554f4;">2025</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(18px, 1.8vw, 24px); line-height: 1.15;">GOLDEN SPONSORRING</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Pulse — &amp;samhoud × Dutch National Opera &amp; Ballet.</div>
+        </div>
+        <div style="background: #101014; color: #f4f3ef; padding: clamp(26px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 4.6vw, 68px); line-height: 1; color: #98a4e8;">2020</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(18px, 1.8vw, 24px); line-height: 1.15;">GRAND SPIN AWARD</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #b9b9c0;">Best digital agency of the Netherlands — ADCN.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(26px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 4.6vw, 68px); line-height: 1; color: #3554f4;">2018</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(18px, 1.8vw, 24px); line-height: 1.15;">YOUNG TALENT OF THE YEAR</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Genootschap voor Reclame.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(26px, 3vw, 40px); display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 4.6vw, 68px); line-height: 1; color: #3554f4;">2015</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(18px, 1.8vw, 24px); line-height: 1.15;">DUTCH GAME AWARD</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">&amp;samhoud creative tech.</div>
+        </div>
+      </div>
+      <div data-reveal style="display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: clamp(20px, 2.6vw, 32px); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #45454d;">
+        <span>NEERLANDS HOOP 2017</span><span>·</span><span>FD TOP 50 ENTREPRENEURIAL TALENTS 2016</span><span>·</span><span>BRIGHT VR AWARD 2015</span><span>·</span><span>SPIN AWARDS 2014</span><span>·</span><span>CINEQUEST 2012</span><span>·</span><span>SPROUT 25 UNDER 25 2011</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PHOTOGRAPHY ═══ -->
+  <div id="photography" data-screen-label="Photography">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(28px, 4vw, 48px);">
+        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 5vw, 68px); letter-spacing: -0.03em; line-height: 1;">BEYOND BUSINESS</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">FILM, BOOKS &amp; PHOTOGRAPHY</div>
+      </div>
+      <div data-reveal style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.7; color: #45454d; max-width: 720px; margin-bottom: clamp(28px, 4vw, 44px);">Creativity doesn't stop at the office. I direct, write and shoot myself — from VR film to documentary to portrait photography, a semi-professional practice since 2022.</div>
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: #101014; border: 1px solid #101014; margin-bottom: clamp(28px, 4vw, 44px);">
+        <div style="background: #101014; position: relative; min-height: 340px; grid-row: span 2; overflow: hidden;">
+          <sc-if value="{{ nightfallPlaying }}" hint-placeholder-val="{{ false }}">
+            <div onClick="{{ closeNightfall }}" style="position: fixed; inset: 0; z-index: 200; background: rgba(16,16,20,0.94); display: flex; align-items: center; justify-content: center; padding: clamp(12px, 3vw, 48px);">
+              <div style="position: relative; width: min(1280px, 100%); aspect-ratio: 16/9;">
+                <iframe src="https://www.youtube-nocookie.com/embed/xCp4at6LE0A?autoplay=1&rel=0&playsinline=1" title="Nightfall — the world's first VR ballet" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #101014;"></iframe>
+                <button onClick="{{ closeNightfall }}" style="position: absolute; top: -44px; right: 0; background: none; border: 1px solid rgba(244,243,239,0.5); color: #f4f3ef; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; padding: 8px 14px; cursor: pointer;">CLOSE ✕</button>
+                <a href="https://www.youtube.com/watch?v=xCp4at6LE0A" target="_blank" rel="noopener" style="position: absolute; top: -44px; left: 0; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: #f4f3ef; border: 1px solid rgba(244,243,239,0.5); padding: 8px 14px;">OPEN ON YOUTUBE ↗</a>
+              </div>
+            </div>
+          </sc-if>
+          <div onClick="{{ playNightfall }}" style="position: absolute; inset: 0; cursor: pointer;">
+              <img data-parallax="1" loading="lazy" src="assets/image13.webp" alt="Ballerina with VR headset — Nightfall" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 42% 20%; filter: grayscale(1) contrast(1.2) brightness(1.1);">
+              <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 74px; height: 74px; border-radius: 50%; background: rgba(16,16,20,0.75); border: 1px solid rgba(244,243,239,0.6); display: flex; align-items: center; justify-content: center; transition: background 0.3s, transform 0.3s;" style-hover="background: #3554f4; transform: scale(1.08)">
+                  <div style="width: 0; height: 0; border-left: 20px solid #f4f3ef; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 5px;"></div>
+                </div>
+              </div>
+              <div style="position: absolute; left: 16px; bottom: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.22em; color: #f4f3ef; background: rgba(16,16,20,0.8); padding: 5px 9px;">NIGHTFALL — THE WORLD'S FIRST VR BALLET · PLAY FILM</div>
+            </div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">AI BALLET · 2024</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2;"><a href="https://www.youtube.com/watch?v=rKSeO81ukf4" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">PULSE ↗</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">The first combination of AI &amp; ballet — with Dutch National Opera &amp; Ballet. Winner of the Golden SponsorRing.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">PHOTO BOOK · 2025</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2;"><a href="https://www.bol.com/nl/nl/p/samen-maken-we-nederland/9300000193435563/" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">TOGETHER WE BUILD THE NETHERLANDS ↗</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Photographed 30+ influential Dutch citizens myself — published with the NL2025 Foundation.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">VR FILM · 2016</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2;"><a href="https://www.youtube.com/watch?v=xCp4at6LE0A" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">NIGHTFALL ↗</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">VR feature film, alongside the world's first VR ballet with Dutch National Ballet &amp; Samsung.</div>
+        </div>
+
+        <div style="background: #f4f3ef; padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">DOCUMENTARY · 2010</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2;"><a href="https://www.youtube.com/watch?v=cYwxFRIrNv4" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">TOGETHER WE BUILD A BRIGHTER FUTURE ↗</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Featuring FW de Klerk &amp; Desmond Tutu — Cinequest Film Festival recognition.</div>
+        </div>
+        <div style="background: #f4f3ef; padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: #3554f4;">BOOK · 2008</div>
+          <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2;"><a href="https://www.bol.com/nl/nl/p/het-kan-allemaal-zoveel-beter/1001004006194227/" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">IT CAN ALL BE SO MUCH BETTER ↗</a></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">Reflections on my time as youth prime minister of the Netherlands.</div>
+        </div>
+      </div>
+      <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; border-top: 1px solid #101014; padding-top: 18px; margin-bottom: clamp(14px, 2vw, 22px);">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #3554f4;">PORTRAITS SHOT BY ME — FROM MY PHOTO BOOK "TOGETHER WE BUILD THE NETHERLANDS"</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #45454d;">NL2025 · 2025</div>
+      </div>
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(14px, 2vw, 24px);">
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-1.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-2.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-3.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <div id="contact" data-screen-label="Contact" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
+    <div style="max-width: 1440px; margin: 0 auto; padding: clamp(64px, 9vw, 130px) clamp(20px, 4vw, 56px) clamp(40px, 5vw, 64px) clamp(20px, 4vw, 56px);">
+      <div data-reveal style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(64px, 13vw, 200px); line-height: 0.86; letter-spacing: -0.05em;">LET'S<br><span style="color: #3554f4;">TALK.</span></div>
+      <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(19px, 2vw, 26px); line-height: 1.55; max-width: 640px; margin-top: clamp(28px, 4vw, 44px); color: #b9b9c0;">Building the next chapter from September 2026. If you have a big problem that needs something that doesn't exist yet — let's build and innovate together.</div>
+      <div data-reveal style="margin-top: 22px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.18em; color: #98a4e8; line-height: 2.1;">OPEN TO EXECUTIVE ROLES AT THE INTERSECTION OF<br>COMMERCIAL LEADERSHIP · INNOVATION · AI</div>
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(244,243,239,0.3); border: 1px solid rgba(244,243,239,0.3); margin-top: clamp(36px, 5vw, 60px);">
+        <a href="mailto:jip@samhoud.nl" style="background: #101014; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px; transition: background 0.3s;" style-hover="background: #3554f4">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.26em; color: #98a4e8;">EMAIL</span>
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 17px;">jip@samhoud.nl</span>
+        </a>
+        <a href="tel:+31627045970" style="background: #101014; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px; transition: background 0.3s;" style-hover="background: #3554f4">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.26em; color: #98a4e8;">PHONE</span>
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 17px;">+31 6 270 45 970</span>
+        </a>
+        <a href="https://linkedin.com/in/jipsamhoud" target="_blank" style="background: #101014; padding: 24px 28px; display: flex; flex-direction: column; gap: 8px; transition: background 0.3s;" style-hover="background: #3554f4">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.26em; color: #98a4e8;">LINKEDIN</span>
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 17px;">/in/jipsamhoud</span>
+        </a>
+      </div>
+      <div data-reveal style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: clamp(40px, 6vw, 72px); padding-top: 20px; border-top: 1px solid rgba(244,243,239,0.25); font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.22em; color: #9d9da6;">
+        <span>© JIP SAMHOUD — AMSTERDAM 2026</span>
+        <span>BRAND BUILDER — COMMERCIAL LEADER — PIONEER IN CREATIVITY × TECHNOLOGY</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;reduceMotion&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Site&quot;}}">
+class Component extends DCLogic {
+  state = { nightfallPlaying: false };
+  renderVals() {
+    return {
+      nightfallPlaying: this.state.nightfallPlaying,
+      playNightfall: () => this.setState({ nightfallPlaying: true }),
+      closeNightfall: (e) => { e.stopPropagation(); this.setState({ nightfallPlaying: false }); }
+    };
+  }
+  componentDidMount() {
+    // scroll progress bar
+    const bar = document.getElementById('scroll-progress');
+    let ticking = false;
+    const onScrollFrame = () => {
+      ticking = false;
+      const h = document.documentElement;
+      if (bar) bar.style.width = ((h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)) * 100) + '%';
+      // wipe-reveal dark sections (scroll-driven — can never stay hidden)
+      for (const el of this._wipes || []) {
+        if (el.style.clipPath && el.style.clipPath !== 'none' && el.getBoundingClientRect().top < window.innerHeight * 0.88) {
+          el.style.clipPath = 'inset(0 0 0 0)';
+        }
+      }
+      // parallax on marked images
+      for (const el of document.querySelectorAll('img[data-parallax]')) {
+        const r = el.parentElement.getBoundingClientRect();
+        if (r.bottom < -100 || r.top > window.innerHeight + 100) continue;
+        const c = r.top + r.height / 2 - window.innerHeight / 2;
+        const y = Math.max(-44, Math.min(44, -c * 0.07));
+        el.style.transform = 'translateY(' + y.toFixed(1) + 'px) scale(1.14)';
+      }
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(onScrollFrame); } };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    this._onScroll = onScroll;
+
+    if (this.props.reduceMotion ?? false) { onScroll(); return; }
+
+    this._plx = Array.from(document.querySelectorAll('img[data-parallax]'));
+    for (const el of this._plx) el.style.willChange = 'transform';
+    onScroll();
+
+    // timeline hover previews (desktop only)
+    if (window.matchMedia('(hover: hover)').matches) {
+      const prev = document.createElement('img');
+      prev.style.cssText = 'position:fixed;width:280px;aspect-ratio:4/3;object-fit:cover;pointer-events:none;z-index:90;opacity:0;transition:opacity 0.25s;filter:grayscale(1) contrast(1.1);border:1px solid #f4f3ef;box-shadow:0 18px 48px rgba(0,0,0,0.45);';
+      document.body.appendChild(prev);
+      this._prev = prev;
+      for (const el of document.querySelectorAll('[data-preview]')) {
+        el.style.cursor = 'pointer';
+        el.addEventListener('mouseenter', () => { prev.src = el.getAttribute('data-preview'); prev.style.opacity = '1'; });
+        el.addEventListener('mousemove', (e) => {
+          prev.style.left = Math.min(e.clientX + 28, window.innerWidth - 300) + 'px';
+          prev.style.top = Math.max(12, e.clientY - 110) + 'px';
+        });
+        el.addEventListener('mouseleave', () => { prev.style.opacity = '0'; });
+      }
+    }
+
+    // hero crossfade
+    const fades = Array.from(document.querySelectorAll('img[data-hero-fade]'));
+    if (fades.length) {
+      let fi = -1;
+      this._fadeTimer = setInterval(() => {
+        fi = (fi + 2) % (fades.length + 1) - 1; // cycles -1, 0, 1, -1, ...
+        fades.forEach((el, i) => { el.style.opacity = i === fi ? '1' : '0'; });
+      }, 4500);
+    }
+
+    // wipe-in for dark sections (revealed by the scroll handler above)
+    this._wipes = ['formula', 'story', 'contact'].map((id) => document.getElementById(id)).filter(Boolean);
+    for (const el of this._wipes) {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.9) { el.style.clipPath = 'none'; continue; }
+      el.style.clipPath = 'inset(0 100% 0 0)';
+      el.style.transition = 'clip-path 1.1s cubic-bezier(0.22,1,0.36,1)';
+    }
+    onScroll();
+
+    // count-up on key figures
+    const statIO = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        statIO.unobserve(e.target);
+        const full = e.target.textContent;
+        const m = full.match(/^([^0-9]*)([0-9]+(?:[.,][0-9]+)?)(.*)$/);
+        if (!m) continue;
+        const target = parseFloat(m[2].replace(',', '.'));
+        const dec = m[2].includes('.') || m[2].includes(',') ? 1 : 0;
+        const t0 = performance.now(), dur = 1400;
+        const step = (t) => {
+          const p = Math.min(1, (t - t0) / dur);
+          const ease = 1 - Math.pow(1 - p, 3);
+          e.target.textContent = m[1] + (target * ease).toFixed(dec) + m[3];
+          if (p < 1) requestAnimationFrame(step); else e.target.textContent = full;
+        };
+        requestAnimationFrame(step);
+      }
+    }, { threshold: 0.5 });
+    for (const el of document.querySelectorAll('[data-stat]')) statIO.observe(el);
+    this._statIO = statIO;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'none';
+          io.unobserve(e.target);
+        }
+      }
+    }, { threshold: 0.12 });
+    for (const el of els) {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.9 || r.bottom < 0) { el.style.opacity = '1'; el.style.transform = 'none'; continue; }
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(36px)';
+      el.style.transition = 'opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1)';
+      io.observe(el);
+    }
+    this._io = io;
+  }
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._statIO) this._statIO.disconnect();
+    if (this._fadeTimer) clearInterval(this._fadeTimer);
+    if (this._safety) clearTimeout(this._safety);
+    if (this._prev) this._prev.remove();
+    if (this._onScroll) {
+      window.removeEventListener('scroll', this._onScroll);
+      window.removeEventListener('resize', this._onScroll);
+    }
+  }
+}
+</script>
+</body>
+</html>
