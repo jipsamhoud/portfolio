@@ -8,12 +8,11 @@
 
 ## Nog niet verwerkt in Design
 
-- 2026-07-13 — Statische meta-tags (title, description, og:*, twitter:*, favicon, canonical) toegevoegd aan de echte `<head>` van index.html, gekopieerd uit het helmet-blok. Nodig omdat WhatsApp/LinkedIn-crawlers geen JavaScript uitvoeren en de helmet-tags dus niet zien. Bij een nieuwe Design-export moeten deze head-tags opnieuw toegevoegd worden (of in Design zelf geregeld).
-- 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": was "Building the next chapter from September 2026. If you have a big problem that needs something that doesn't exist yet — let's build and innovate together." → nu "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together."
+- STRUCTUREEL — Statische meta-tags (title, description, og:*, twitter:*, favicon, canonical) in de echte `<head>` van index.html. Nodig omdat WhatsApp/LinkedIn-crawlers geen JavaScript uitvoeren en de helmet-tags dus niet zien. Design-exports leveren een kale head; deze tags worden bij elke deploy opnieuw toegevoegd (gekopieerd uit het helmet-blok van de export). Blijft hier staan tot Design ze zelf in de head zet.
 
 ## Verwerkt in Design
 
-*(nog leeg)*
+- 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together." (zat in de Design-export van 13-07).
 
 ## Infrastructuur (hoeft niet naar Design)
 
