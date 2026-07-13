@@ -12,6 +12,8 @@
 
 ## Verwerkt in Design
 
+- 2026-07-13 — Werkafspraak-commentaarblok staat sinds de export van 13-07 ("Personal animation project") bovenin de broncode. Punt 2 (meta-tags in statische head) voert Design nog niet uit; head-tags worden dus nog per deploy door Claude Code toegevoegd.
+
 - 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together." (zat in de Design-export van 13-07).
 
 ## Infrastructuur (hoeft niet naar Design)
