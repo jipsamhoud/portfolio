@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-*(geen — inhoud is nog identiek aan de laatste Design-export)*
+- 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": was "Building the next chapter from September 2026. If you have a big problem that needs something that doesn't exist yet — let's build and innovate together." → nu "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together."
 
 ## Verwerkt in Design
 
