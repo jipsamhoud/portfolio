@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-- STRUCTUREEL — Statische meta-tags (title, description, og:*, twitter:*, favicon, canonical) én het JSON-LD Person-schema in de echte `<head>` van index.html. Nodig omdat WhatsApp/LinkedIn/AI-crawlers geen JavaScript uitvoeren en de helmet-tags dus niet zien. Design-exports leveren nog een kale head; deze tags worden bij elke deploy opnieuw toegevoegd (gekopieerd uit het helmet-blok van de export). Blijft hier staan tot Design ze zelf in de head zet.
+- STRUCTUREEL — SEO/social meta-tags (title, description, og:*, twitter:*, favicon, canonical) én JSON-LD Person-schema horen ALLEEN in de echte `<head>`, NIET in het helmet-blok. Nodig omdat WhatsApp/LinkedIn/AI-crawlers geen JS uitvoeren; én omdat support.js het helmet-blok bij runtime nogmaals in de head rendert (staan de tags op beide plekken, dan ziet een crawler ze dubbel — Bing Site Scan flagde dit op 15-07). Design-exports zetten deze tags nog in het helmet-blok; bij elke deploy dus: (a) tags in de statische head zetten, (b) dezelfde tags uit het helmet-blok verwijderen (fonts + `<style>` in helmet laten staan). Blijft hier tot Design ze zelf direct in de head zet.
 
 ## Verwerkt in Design
 
