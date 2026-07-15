@@ -8,6 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
+- STRUCTUREEL — De `<title>` in de statische head is bewust kort: "Jip Samhoud — Brand Builder & Commercial Leader in Tech × AI" (~58 tekens, volledig zichtbaar in zoekresultaten). De lange brandingversie ("… · Pioneer in Creativity × Technology") blijft als `og:title` en `twitter:title` voor social cards. Bij elke deploy: `<title>` = korte versie, og/twitter-title = lange versie.
 - STRUCTUREEL — SEO/social meta-tags (title, description, og:*, twitter:*, favicon, canonical) én JSON-LD Person-schema horen ALLEEN in de echte `<head>`, NIET in het helmet-blok. Nodig omdat WhatsApp/LinkedIn/AI-crawlers geen JS uitvoeren; én omdat support.js het helmet-blok bij runtime nogmaals in de head rendert (staan de tags op beide plekken, dan ziet een crawler ze dubbel — Bing Site Scan flagde dit op 15-07). Design-exports zetten deze tags nog in het helmet-blok; bij elke deploy dus: (a) tags in de statische head zetten, (b) dezelfde tags uit het helmet-blok verwijderen (fonts + `<style>` in helmet laten staan). Blijft hier tot Design ze zelf direct in de head zet.
 
 ## Verwerkt in Design
