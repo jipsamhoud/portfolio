@@ -8,15 +8,13 @@
 
 ## Nog niet verwerkt in Design
 
-- 2026-07-13 — Career-sectie &ranj: "30+ years" → "25 years"; case card № 05: "a 30+ year studio" → "a 25-year studio" (zelfde feitelijke correctie).
-- 2026-07-13 — Timeline-kaart "2018 — GAMING": beschrijving herschreven naar "Behaviour change through play — co-owner of &ranj, Game Studio of the Year, building for Johns Hopkins, War Child and Zurich." (verwijzing naar kids' banking/loyalty weggehaald — die horen bij de 2013-golf; loste schijnbare datumtegenstrijdigheid met case card № 05 op).
-- 2026-07-13 — Telefoonnummer-tegel verwijderd uit de contact-sectie (privacy/scraping); alleen e-mail en LinkedIn blijven.
-
-- STRUCTUREEL — Statische meta-tags (title, description, og:*, twitter:*, favicon, canonical) in de echte `<head>` van index.html. Nodig omdat WhatsApp/LinkedIn-crawlers geen JavaScript uitvoeren en de helmet-tags dus niet zien. Design-exports leveren een kale head; deze tags worden bij elke deploy opnieuw toegevoegd (gekopieerd uit het helmet-blok van de export). Blijft hier staan tot Design ze zelf in de head zet.
+- STRUCTUREEL — Statische meta-tags (title, description, og:*, twitter:*, favicon, canonical) én het JSON-LD Person-schema in de echte `<head>` van index.html. Nodig omdat WhatsApp/LinkedIn/AI-crawlers geen JavaScript uitvoeren en de helmet-tags dus niet zien. Design-exports leveren nog een kale head; deze tags worden bij elke deploy opnieuw toegevoegd (gekopieerd uit het helmet-blok van de export). Blijft hier staan tot Design ze zelf in de head zet.
 
 ## Verwerkt in Design
 
-- 2026-07-13 — Werkafspraak-commentaarblok staat sinds de export van 13-07 ("Personal animation project") bovenin de broncode. Punt 2 (meta-tags in statische head) voert Design nog niet uit; head-tags worden dus nog per deploy door Claude Code toegevoegd.
+- 2026-07-15 — Copy-fixes uit de review (25 years i.p.v. 30+ years op 2 plekken; 2018-timeline herschreven; telefoonnummer verwijderd) zitten allemaal in de export van 15-07. Ook nieuw: Design heeft semantische headings toegevoegd (1× h1, 6× h2) voor SEO.
+
+- 2026-07-13 — Werkafspraak-commentaarblok staat sinds de export van 13-07 bovenin de broncode. Meta-tags-in-statische-head voert Design nog niet uit; die worden per deploy door Claude Code toegevoegd.
 
 - 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together." (zat in de Design-export van 13-07).
 

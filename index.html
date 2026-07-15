@@ -6,8 +6,9 @@ WERKAFSPRAAK (niet verwijderen):
    in SITE-CHANGELOG.md in die repo. Vraag Jip vóór elke wijziging om de
    openstaande regels onder "Nog niet verwerkt in Design" en verwerk die eerst.
 2. Zet de meta-tags uit het <helmet>-blok (title, description, og:*, twitter:*,
-   favicon, canonical) óók statisch in de echte <head>, want link-crawlers van
-   WhatsApp en LinkedIn voeren geen JavaScript uit.
+   favicon, canonical, én het application/ld+json Person-schema) óók statisch in
+   de echte <head>, vóór de support.js-script-tag, want link-crawlers van
+   WhatsApp, LinkedIn en AI-agents voeren geen JavaScript uit.
 -->
 <html>
 <head>
@@ -97,7 +98,7 @@ WERKAFSPRAAK (niet verwijderen):
 
   <!-- ═══ HERO ═══ -->
   <div id="top" data-screen-label="Hero" style="position: relative;">
-    <div data-hero-word1 style="text-align: center; padding-top: clamp(14px, 2vw, 28px); font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(80px, 17.5vw, 260px); line-height: 0.84; letter-spacing: -0.05em;"><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.05s both;">J</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.14s both;">I</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.23s both;">P</span></div>
+    <h1 data-hero-word1 style="margin: 0; text-align: center; padding-top: clamp(14px, 2vw, 28px); font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(80px, 17.5vw, 260px); line-height: 0.84; letter-spacing: -0.05em;"><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.05s both;">J</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.14s both;">I</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.23s both;">P</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;"> SAMHOUD</span></h1>
     <div data-hero-photo-wrap style="position: relative; width: min(640px, 80vw); margin: -0.45em auto 0 auto; animation: heroFade 1.4s 0.25s both;">
       <div style="position: relative; width: 100%; aspect-ratio: 640/600; overflow: hidden;">
         <img src="assets/image1.webp" alt="Jip Samhoud" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%; filter: grayscale(1) contrast(1.16); display: block;">
@@ -115,7 +116,7 @@ WERKAFSPRAAK (niet verwijderen):
         <div style="font-family: 'Newsreader', serif; font-size: 17px; line-height: 1.5;">Co-owner <a href="https://www.samhoud.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">&amp;samhoud</a> · Co-owner <a href="https://www.ranj.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">&amp;ranj</a> · Co-founder <a href="https://www.letscopilot.com" target="_blank" rel="noopener" style="text-decoration: underline; text-underline-offset: 3px;">Let's Copilot</a></div>
       </div>
     </div>
-    <div style="text-align: center; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 9.8vw, 146px); line-height: 0.9; letter-spacing: -0.04em; color: #3554f4; margin-top: -0.45em; position: relative;" data-hero-word2><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s both;">S</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.46s both;">A</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.52s both;">M</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.58s both;">H</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.64s both;">O</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.7s both;">U</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.76s both;">D</span></div>
+    <div style="text-align: center; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(44px, 9.8vw, 146px); line-height: 0.9; letter-spacing: -0.04em; color: #3554f4; margin-top: -0.45em; position: relative;" data-hero-word2 aria-hidden="true"><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s both;">S</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.46s both;">A</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.52s both;">M</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.58s both;">H</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.64s both;">O</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.7s both;">U</span><span style="display: inline-block; animation: heroRise 0.9s cubic-bezier(0.22,1,0.36,1) 0.76s both;">D</span></div>
     <div data-hero-tagline style="text-align: center; margin: clamp(20px, 3vw, 36px) auto 0 auto; font-family: 'JetBrains Mono', monospace; font-size: clamp(11px, 1.3vw, 13px); letter-spacing: 0.3em; animation: heroFade 1s 1.2s both;">BRAND BUILDER — COMMERCIAL LEADER — PIONEER IN CREATIVITY × TECHNOLOGY</div>
   </div>
 
@@ -167,7 +168,7 @@ WERKAFSPRAAK (niet verwijderen):
   <div id="formula" data-screen-label="Formula" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(20px, 3vw, 36px);">
-        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(28px, 5vw, 72px); letter-spacing: -0.03em; line-height: 1;">CREATIVITY <span style="color: #98a4e8;">×</span> TECHNOLOGY</div>
+        <h2 style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(28px, 5vw, 72px); letter-spacing: -0.03em; line-height: 1;">CREATIVITY <span style="color: #98a4e8;">×</span> TECHNOLOGY</h2>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #9d9da6;">BUILDING ON EVERY NEW WAVE</div>
       </div>
       <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(18px, 1.9vw, 26px); line-height: 1.6; max-width: 880px; margin-bottom: clamp(36px, 5vw, 60px); color: #b9b9c0;">Every venture follows the same equation: a creative concept, built on frontier technology, landing at commercial scale. I've built at the front of every wave — and AI is the biggest one yet.</div>
@@ -185,7 +186,7 @@ WERKAFSPRAAK (niet verwijderen):
         <div style="background: #101014; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
           <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #98a4e8;">2018 — GAMING</div>
           <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.15;">SERIOUS GAMING</div>
-          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #9d9da6;">Behaviour change through play — co-owner of &amp;ranj, Game Studio of the Year, building for Johns Hopkins, War Child and Zurich.</div>
+          <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #9d9da6;">Behaviour change through play — co-owner of &ranj, Game Studio of the Year, building for Johns Hopkins, War Child and Zurich.</div>
         </div>
         <div data-ai-tile style="background: #3554f4; padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 12px;">
           <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #101014;">2024 — NOW</div>
@@ -200,7 +201,7 @@ WERKAFSPRAAK (niet verwijderen):
   <div id="work" data-screen-label="Selected Work" style="border-top: 1px solid #101014;">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
-        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">SELECTED WORK</div>
+        <h2 style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">SELECTED WORK</h2>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">BRANDS, VENTURES &amp; MOVEMENTS</div>
       </div>
 
@@ -286,7 +287,7 @@ WERKAFSPRAAK (niet verwijderen):
   <div id="story" data-screen-label="Story" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
-        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">THE STORY</div>
+        <h2 style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(38px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">THE STORY</h2>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #9d9da6;">15 YEARS OF BUILDING</div>
       </div>
       <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.55; max-width: 900px; margin-bottom: clamp(40px, 5vw, 72px);">When technology becomes a commodity, the brand is what makes people choose. As an innovator I connect a brand's commercial, societal and public sides into one growth engine — with the creative vision to make something magical and the network to make it happen.</div>
@@ -353,7 +354,7 @@ WERKAFSPRAAK (niet verwijderen):
   <div id="leadership" data-screen-label="Leadership" style="border-top: 1px solid #101014;">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(36px, 5vw, 64px);">
-        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">PUBLIC LEADERSHIP</div>
+        <h2 style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 6vw, 84px); letter-spacing: -0.03em; line-height: 1;">PUBLIC LEADERSHIP</h2>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">LEADING FROM OUTSIDE</div>
       </div>
       <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: #101014; border: 1px solid #101014;">
@@ -427,7 +428,7 @@ WERKAFSPRAAK (niet verwijderen):
   <div id="photography" data-screen-label="Photography">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 100px) clamp(20px, 4vw, 56px);">
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(28px, 4vw, 48px);">
-        <div style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 5vw, 68px); letter-spacing: -0.03em; line-height: 1;">BEYOND BUSINESS</div>
+        <h2 style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(34px, 5vw, 68px); letter-spacing: -0.03em; line-height: 1;">BEYOND BUSINESS</h2>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #45454d;">FILM, BOOKS &amp; PHOTOGRAPHY</div>
       </div>
       <div data-reveal style="font-family: 'Newsreader', serif; font-size: clamp(16px, 1.5vw, 19px); line-height: 1.7; color: #45454d; max-width: 720px; margin-bottom: clamp(28px, 4vw, 44px);">Creativity doesn't stop at the office. I direct, write and shoot myself — from VR film to documentary to portrait photography, a semi-professional practice since 2022.</div>
@@ -494,7 +495,7 @@ WERKAFSPRAAK (niet verwijderen):
   <!-- ═══ CONTACT ═══ -->
   <div id="contact" data-screen-label="Contact" style="border-top: 1px solid #101014; background: #101014; color: #f4f3ef;">
     <div style="max-width: 1440px; margin: 0 auto; padding: clamp(64px, 9vw, 130px) clamp(20px, 4vw, 56px) clamp(40px, 5vw, 64px) clamp(20px, 4vw, 56px);">
-      <div data-reveal style="font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(64px, 13vw, 200px); line-height: 0.86; letter-spacing: -0.05em;">LET'S<br><span style="color: #3554f4;">TALK.</span></div>
+      <h2 data-reveal style="margin: 0; font-family: 'Archivo Expanded', sans-serif; font-weight: 700; font-size: clamp(64px, 13vw, 200px); line-height: 0.86; letter-spacing: -0.05em;">LET'S<br><span style="color: #3554f4;">TALK.</span></h2>
       <div data-reveal style="font-family: 'Newsreader', serif; font-weight: 300; font-size: clamp(19px, 2vw, 26px); line-height: 1.55; max-width: 640px; margin-top: clamp(28px, 4vw, 44px); color: #b9b9c0;">Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together.</div>
       <div data-reveal style="margin-top: 22px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.18em; color: #98a4e8; line-height: 2.1;">OPEN TO EXECUTIVE ROLES AT THE INTERSECTION OF<br>COMMERCIAL LEADERSHIP · INNOVATION · AI</div>
       <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(244,243,239,0.3); border: 1px solid rgba(244,243,239,0.3); margin-top: clamp(36px, 5vw, 60px);">
