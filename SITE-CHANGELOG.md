@@ -22,6 +22,8 @@
 
 ## Infrastructuur (hoeft niet naar Design)
 
+- 2026-07-15 — SEO: sitemap.xml en robots.txt (met sitemap-verwijzing) toegevoegd; JSON-LD Person-schema gekopieerd naar de statische head (stond alleen in het helmet-blok). Hoort bij de vaste head-tags-stap bij elke deploy.
+
 - 2026-07-13 — Eerste deploy naar Cloudflare Worker `portfolio` via GitHub `jipsamhoud/portfolio`.
 - 2026-07-13 — `.assetsignore` + `wrangler.jsonc` toegevoegd (houdt `.git` e.d. uit de publieke site).
 - 2026-07-13 — www-CNAME + Worker-route, 301 www → root, Always Use HTTPS, workers.dev-URL's uit.
