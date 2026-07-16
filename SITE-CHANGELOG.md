@@ -8,14 +8,15 @@
 
 ## Nog niet verwerkt in Design
 
-- STRUCTUREEL — De `<title>` in de statische head is bewust kort: "Jip Samhoud — Brand Builder & Commercial Leader in Tech × AI" (~58 tekens, volledig zichtbaar in zoekresultaten). De lange brandingversie ("… · Pioneer in Creativity × Technology") blijft als `og:title` en `twitter:title` voor social cards. Bij elke deploy: `<title>` = korte versie, og/twitter-title = lange versie.
-- STRUCTUREEL — SEO/social meta-tags (title, description, og:*, twitter:*, favicon, canonical) én JSON-LD Person-schema horen ALLEEN in de echte `<head>`, NIET in het helmet-blok. Nodig omdat WhatsApp/LinkedIn/AI-crawlers geen JS uitvoeren; én omdat support.js het helmet-blok bij runtime nogmaals in de head rendert (staan de tags op beide plekken, dan ziet een crawler ze dubbel — Bing Site Scan flagde dit op 15-07). Design-exports zetten deze tags nog in het helmet-blok; bij elke deploy dus: (a) tags in de statische head zetten, (b) dezelfde tags uit het helmet-blok verwijderen (fonts + `<style>` in helmet laten staan). Blijft hier tot Design ze zelf direct in de head zet.
+*(geen openstaande punten — Design verwerkt sinds de export van 15-07 (v2) alle structurele afspraken zelf)*
 
 ## Verwerkt in Design
 
-- 2026-07-15 — Copy-fixes uit de review (25 years i.p.v. 30+ years op 2 plekken; 2018-timeline herschreven; telefoonnummer verwijderd) zitten allemaal in de export van 15-07. Ook nieuw: Design heeft semantische headings toegevoegd (1× h1, 6× h2) voor SEO.
+- 2026-07-15 (v2) — Design zet de SEO/social meta-tags + JSON-LD nu ZELF in de statische `<head>` (en niet meer in het helmet-blok), met de korte `<title>` en de lange `og:title`/`twitter:title`. De handmatige head-dedup-stap bij deploy is niet meer nodig; controleer alleen nog dat er geen duplicaten zijn. Nieuwe work-tegel "ANWB Streetwise" toegevoegd.
 
-- 2026-07-13 — Werkafspraak-commentaarblok staat sinds de export van 13-07 bovenin de broncode. Meta-tags-in-statische-head voert Design nog niet uit; die worden per deploy door Claude Code toegevoegd.
+- 2026-07-15 — Copy-fixes uit de review (25 years i.p.v. 30+ years op 2 plekken; 2018-timeline herschreven; telefoonnummer verwijderd) + semantische headings (1× h1, 6× h2).
+
+- 2026-07-13 — Werkafspraak-commentaarblok staat bovenin de broncode.
 
 - 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together." (zat in de Design-export van 13-07).
 
