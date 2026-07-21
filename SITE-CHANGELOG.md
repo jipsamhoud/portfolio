@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-*(geen openstaande punten — Design verwerkt sinds de export van 15-07 (v2) alle structurele afspraken zelf)*
+- 2026-07-21 — Career-sectie, &RANJ SERIOUS GAMES-entry: uitgebreide beschrijving. Nieuw: "Co-owner. Game Studio of the Year. A Rotterdam studio (est. 1999) developing serious games and gamification software in-house, combining game design, software engineering, behavioural science and AI. Twenty-five years of behaviour change through play, with 1M+ players worldwide, building for Johns Hopkins Institute, War Child, Zurich, Erasmus MC and Houthoff." ("Co-owner." als prefix behouden voor consistentie met andere career-entries.) NB: case card № 05 heeft nog de kortere &ranj-tekst (3 clients) — bewust niet meegewijzigd.
 
 ## Verwerkt in Design
 
