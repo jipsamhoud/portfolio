@@ -8,6 +8,22 @@
 
 ## Nog niet verwerkt in Design
 
+### 2026-07-21 — Positioneringsronde (site als sollicitatie-instrument)
+Doel: de lezer is een senior executive die 20 seconden kijkt. Rode draad: "nieuwe technologie omzetten in iets dat miljoenen mensen daadwerkelijk gebruiken."
+
+- **Verkoopjaar 2024.** Story-regel `&SAMHOUD CREATIVE TECH` staat nu op `2013–2024`, beschrijving eindigt op "Sold 2024." De regel `2023–NOW · &SAMHOUD` blijft ongewijzigd (overlap is correct). Casekaarten № 01 en № 04 houden bewust `2013–2023` — dat is de looptijd van het wérk, niet van het eigenaarschap.
+- **Hero rechterkaart.** Label: `AMSTERDAM · AVAILABLE FROM SEPTEMBER 2026`. Body: "Founder & CEO of a 40-FTE digital agency, built and sold." + "Co-owner &ranj · Co-founder Let's Copilot". NB: "Co-owner &samhoud" is hier bewust weggehaald (leest als adviseur); staat nog wel in The Story.
+- **Ticker.** `CO-OWNER &SAMHOUD` → `FOUNDER & CEO · BUILT AND SOLD`. Rest ongewijzigd.
+- **Statistiekenbalk.** Tegel `€2.2M / RECORD FUNDRAISING, D66 2025` → `40+ FTE / AGENCY BUILT & SOLD` (politiek cijfer hoort niet tussen commercieel bewijs). Het D66-cijfer blijft staan in Public Leadership. Label `APP DOWNLOADS` → `APP DOWNLOADS ACROSS ALL VENTURES`; &ranj-tekst: "1M+ players worldwide across &ranj titles" (twee schaalgetallen expliciet uit elkaar).
+- **Hero-quote.** "…I build brands and ventures that *move society forward*." → "…I turn new technology into *things people actually use*." (resultaat i.p.v. intentie).
+- **"Intersection" volledig geschrapt** (meta description + contactblok + llms.txt) — die formulering zegt letterlijk dat hij tussen categorieën in valt.
+- **Contactblok.** `OPEN TO EXECUTIVE ROLES AT THE INTERSECTION OF…` → `OPEN TO CHIEF AI OFFICER · CMO · CHIEF DIGITAL OFFICER · GENERAL MANAGER`. Volgorde door Jip gekozen (Chief AI Officer voorop).
+- **Scharnierregel boven de cases.** Nieuw, direct onder de kop SELECTED WORK: "Six ventures, one pattern: a new technology, a brand built on top of it, and millions of people who *actually used it*."
+- **Slogan "Technology does not win. Adoption does." overal verwijderd** (wave-kaart AI + casekaart № 03 + llms.txt). "AI adoption" als productomschrijving en `ADVISOR AI ADOPTION & STRATEGY` in de ticker blijven wél staan.
+- **D66-blok.** Kop `AT THE HEART OF…` → `PART OF THE CAMPAIGN THAT MADE ROB JETTEN PRIME MINISTER` (claim moest matchen met de functieomschrijving). Rol verplaatst naar de labelregel: `STRATEGIC ADVISOR · FUNDRAISING COMMITTEE / D66 & ROB JETTEN · 2024–NOW`. Body: "Record-breaking €2.2M fundraise; closely involved in…". Plaatsing bovenaan blijft.
+- **Beyond Business.** Introzin → "A personal practice, not a second career. …" (kaderen als persoonlijke praktijk, niet als vierde beroepsdimensie). NB: de gevraagde extra vísuele scheiding van deze sectie is NIET gedaan — dat is een designkeuze, graag in Design oppakken.
+- **Meta/og-description** herschreven naar één zin: "Brand builder and commercial leader. Fifteen years of founding companies and shipping products that reach millions."
+
 - 2026-07-21 — Career-sectie, &RANJ SERIOUS GAMES-entry: uitgebreide beschrijving. Nieuw: "Co-owner. Game Studio of the Year. A Rotterdam studio (est. 1999) developing serious games and gamification software in-house, combining game design, software engineering, behavioural science and AI. Twenty-five years of behaviour change through play, with 1M+ players worldwide, building for Johns Hopkins Institute, War Child, Zurich, Erasmus MC and Houthoff." ("Co-owner." als prefix behouden voor consistentie met andere career-entries.) NB: case card № 05 heeft nog de kortere &ranj-tekst (3 clients) — bewust niet meegewijzigd.
 
 ## Verwerkt in Design
