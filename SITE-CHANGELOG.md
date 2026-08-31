@@ -8,7 +8,13 @@
 
 ## Nog niet verwerkt in Design
 
-### 2026-07-21 — Positioneringsronde (site als sollicitatie-instrument)
+- **STRUCTUREEL (nog openstaand na export 21-07)** — Drie head-/a11y-regels ontbreken nog in Design-exports en worden bij elke deploy opnieuw toegevoegd: `<html lang="en">`, `<meta name="author" content="Jip Samhoud">` en `rel="noopener"` op de LinkedIn-link in het contactblok. Graag in Design vastleggen.
+- 2026-07-21 — Ticker: `FOUNDER & CEO · BUILT AND SOLD` → `FOUNDER & CEO &SAMHOUD CREATIVE TECH`. Reden: "built and sold" is geen rol en zweefde zonder object tussen items die allemaal rol + organisatie zijn. Het operator-signaal blijft, nu in de grammatica van de ticker. (De "built and sold"-boodschap staat onverkort in de hero en de statistiekenbalk.)
+- **DESIGNTAAK** — Beyond Business visueel duidelijker scheiden van het professionele deel erboven (tekstuele kadering is al gedaan). En: de og-card gebruikt nog em-dashes ("BRAND BUILDER — COMMERCIAL LEADER") terwijl de site middenpunten gebruikt.
+
+## Verwerkt in Design
+
+### 2026-07-21 — Positioneringsronde (site als sollicitatie-instrument) — VERWERKT in export 21-07
 Doel: de lezer is een senior executive die 20 seconden kijkt. Rode draad: "nieuwe technologie omzetten in iets dat miljoenen mensen daadwerkelijk gebruiken."
 
 - **Verkoopjaar 2024.** Story-regel `&SAMHOUD CREATIVE TECH` staat nu op `2013–2024`, beschrijving eindigt op "Sold 2024." De regel `2023–NOW · &SAMHOUD` blijft ongewijzigd (overlap is correct). Casekaarten № 01 en № 04 houden bewust `2013–2023` — dat is de looptijd van het wérk, niet van het eigenaarschap.
@@ -26,8 +32,6 @@ Doel: de lezer is een senior executive die 20 seconden kijkt. Rode draad: "nieuw
 - **Meta/og-description** herschreven naar één zin: "Brand builder and commercial leader. Fifteen years of founding companies and shipping products that reach millions."
 
 - 2026-07-21 — Career-sectie, &RANJ SERIOUS GAMES-entry: uitgebreide beschrijving. Nieuw: "Co-owner. Game Studio of the Year. A Rotterdam studio (est. 1999) developing serious games and gamification software in-house, combining game design, software engineering, behavioural science and AI. Twenty-five years of behaviour change through play, with 1M+ players worldwide, building for Johns Hopkins Institute, War Child, Zurich, Erasmus MC and Houthoff." ("Co-owner." als prefix behouden voor consistentie met andere career-entries.) NB: case card № 05 heeft nog de kortere &ranj-tekst (3 clients) — bewust niet meegewijzigd.
-
-## Verwerkt in Design
 
 - 2026-07-15 (v2) — Design zet de SEO/social meta-tags + JSON-LD nu ZELF in de statische `<head>` (en niet meer in het helmet-blok), met de korte `<title>` en de lange `og:title`/`twitter:title`. De handmatige head-dedup-stap bij deploy is niet meer nodig; controleer alleen nog dat er geen duplicaten zijn. Nieuwe work-tegel "ANWB Streetwise" toegevoegd.
 
