@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /r/
+Allow: /robots.txt
+Disallow: /r
 
 Sitemap: https://jipsamhoud.nl/sitemap.xml

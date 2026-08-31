@@ -5,9 +5,14 @@
   "assets": {
     "directory": ".",
     // Onbekende paden serveren index.html i.p.v. 404. Hierdoor werkt
-    // jipsamhoud.nl/r/<nummer> als "campagnelink": dezelfde pagina, maar het
+    // jipsamhoud.nl/r1, /r2, ... als "campagnelink": dezelfde pagina, maar het
     // pad is zichtbaar in Cloudflare Web Analytics (Visits → Path), zodat Jip
-    // per verstuurde link ziet of er geklikt is. Zie SITE-CHANGELOG.md.
+    // per verstuurde link ziet of er geklikt is.
+    //
+    // LET OP: gebruik ALTIJD één padsegment (/r1), nooit /r/1. index.html laadt
+    // support.js en assets/ met relatieve paden; bij /r/1 zou de browser die
+    // opvragen als /r/support.js en /r/assets/... en dan HTML terugkrijgen —
+    // de pagina is dan stuk voor wie hem nog niet gecachet heeft.
     "not_found_handling": "single-page-application"
   }
 }
