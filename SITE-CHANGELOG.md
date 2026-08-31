@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-*(geen openstaande copy-punten — Design-export v8 van 31-08 heeft alles verwerkt)*
+- 2026-08-31 — Beschikbaarheid geactualiseerd nu het september is (samenvalt met de publieke aankondiging): hero-badge "AVAILABLE FROM SEPTEMBER 2026" → "AVAILABLE NOW"; contact-sectie "Building the next chapter from September 2026." → "Building the next chapter, starting now."; zelfde wijziging in llms.txt. Neem "AVAILABLE NOW" over als vaste badge-tekst.
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
 
