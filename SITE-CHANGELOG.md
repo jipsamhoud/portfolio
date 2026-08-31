@@ -8,11 +8,19 @@
 
 ## Nog niet verwerkt in Design
 
-- **STRUCTUREEL (nog openstaand na export 21-07)** — Drie head-/a11y-regels ontbreken nog in Design-exports en worden bij elke deploy opnieuw toegevoegd: `<html lang="en">`, `<meta name="author" content="Jip Samhoud">` en `rel="noopener"` op de LinkedIn-link in het contactblok. Graag in Design vastleggen.
-- 2026-07-21 — Ticker: `FOUNDER & CEO · BUILT AND SOLD` → `FOUNDER & CEO &SAMHOUD CREATIVE TECH`. Reden: "built and sold" is geen rol en zweefde zonder object tussen items die allemaal rol + organisatie zijn. Het operator-signaal blijft, nu in de grammatica van de ticker. (De "built and sold"-boodschap staat onverkort in de hero en de statistiekenbalk.)
-- **DESIGNTAAK** — Beyond Business visueel duidelijker scheiden van het professionele deel erboven (tekstuele kadering is al gedaan). En: de og-card gebruikt nog em-dashes ("BRAND BUILDER — COMMERCIAL LEADER") terwijl de site middenpunten gebruikt.
+*(geen openstaande copy-punten — Design-export v8 van 31-08 heeft alles verwerkt)*
+
+## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
+
+- **CAMPAGNELINKS `/r1`, `/r2`, …** (31-08). `wrangler.jsonc` staat op `not_found_handling: "single-page-application"`, zodat een onbekend pad dezelfde pagina serveert. Daardoor kan Jip per verstuurde link een eigen URL gebruiken (`jipsamhoud.nl/r7`) en in Cloudflare Web Analytics onder Visits → Path zien of er geklikt is.
+  - **ALTIJD één padsegment**: `/r7`, NOOIT `/r/7`. index.html laadt `support.js` en `assets/` met relatieve paden; bij `/r/7` vraagt de browser `/r/support.js` op, krijgt HTML terug, en dan draait de render-runtime niet — de pagina toont dan ruwe opmaak (video-overlay open, gebroken afbeeldingen).
+  - Dit is exact één keer misgegaan en meteen gecorrigeerd; `wrangler.jsonc` bevat een waarschuwing.
+  - `robots.txt` bevat `Disallow: /r` zodat campagne-URL's niet in zoekmachines komen; de canonical op die pagina's wijst naar `https://jipsamhoud.nl/`.
+- **Cloudflare Web Analytics RUM** (31-08) staat van "Enable, excluding visitor data in the EU" op **"Enable"**. Zonder die wijziging werd er voor EU-bezoekers géén meetcode geladen en was vrijwel al het verkeer onzichtbaar. Cookieloos, geen banner nodig.
 
 ## Verwerkt in Design
+
+- 2026-08-31 (export v8) — Alle openstaande punten verwerkt: de drie head-/a11y-regels (`lang`, `author`, `noopener`) staan nu vast in de export, de tickerregel is overgenomen, Beyond Business heeft een eigen achtergrondtint + dubbele topline, en de og-card gebruikt middenpunten. Daarbovenop zelf opgepakt: **CLS-fix** (fonts vroeg uit de statische head, `display=optional`, vaste navigatiehoogte van 48px) en een hero-badge.
 
 ### 2026-07-21 — Positioneringsronde (site als sollicitatie-instrument) — VERWERKT in export 21-07
 Doel: de lezer is een senior executive die 20 seconden kijkt. Rode draad: "nieuwe technologie omzetten in iets dat miljoenen mensen daadwerkelijk gebruiken."
