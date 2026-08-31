@@ -2,5 +2,12 @@
   "name": "portfolio",
   "compatibility_date": "2026-07-13",
   "observability": { "enabled": true },
-  "assets": { "directory": "." }
+  "assets": {
+    "directory": ".",
+    // Onbekende paden serveren index.html i.p.v. 404. Hierdoor werkt
+    // jipsamhoud.nl/r/<nummer> als "campagnelink": dezelfde pagina, maar het
+    // pad is zichtbaar in Cloudflare Web Analytics (Visits → Path), zodat Jip
+    // per verstuurde link ziet of er geklikt is. Zie SITE-CHANGELOG.md.
+    "not_found_handling": "single-page-application"
+  }
 }
