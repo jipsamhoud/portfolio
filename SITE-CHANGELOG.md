@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-- (leeg)
+- **2026-09-10 — kleine designtaak (gezien bij deploy v11):** het JSON-LD `jobTitle` zegt nog "Brand Builder, Commercial Leader & Pioneer in Creativity × Technology" — zonder "Venture". Graag in de volgende export gelijktrekken met de nieuwe positionering ("Brand & Venture Builder …").
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
 
@@ -20,6 +20,7 @@
 
 ## Verwerkt in Design
 
+- 2026-09-10 (export v11) — Revisiebrief verwerkt: positionering "BRAND & VENTURE BUILDER · COMMERCIAL LEADER · PIONEER IN CREATIVITY × TECHNOLOGY" (hero-tagline, footer, title, og:title/twitter:title, meta/og:description), nieuwe og-card met die regel (**?v=5** in og:image, twitter:image, JSON-LD image). Blok 03 INSPIRATOR → MOBILISER (subregel "I can sell an idea." en body bewust ongewijzigd), intro WHAT I BRING aangepast, Connector-zin Pingo Doce/Condis toegevoegd, Story &samhoud 2023–2026 + overdrachtszin, dedupe Work № 05/blok 04, em-dashes uit alt/title-attributen. Claude Code: llms.txt bijgewerkt (brand and venture builder, Mobiliser, Pingo Doce/Condis-zin, &samhoud-overdracht).
 - 2026-09-10 (export v10) — Adformatie-attributie zonder jaartal: "JIP SAMHOUD: FROM STARTUP TO MARKETING PIONEER IN SIX YEARS" · ADFORMATIE (link ongewijzigd). Verder identiek aan live v9. llms.txt gecontroleerd: daar stond geen jaartal.
 - 2026-09-10 — DOMEINMIGRATIE: jipsamhoud.com is nu het hoofddomein. Alle verwijzingen (canonical, og:url, og:image, twitter:image, JSON-LD, sitemap, robots, llms.txt) staan op jipsamhoud.com; jipsamhoud.nl stuurt permanent door met 301 en padbehoud. Werkafspraak punt 5 is omgedraaid. Designtaak gedaan in export v10: nieuwe og-card (assets/og-card.jpg) met JIPSAMHOUD.COM, ?v=4 in og:image, twitter:image en JSON-LD image; "jipsamhoud.nl" komt in ontwerpteksten alleen nog voor in werkafspraak punt 5 (redirect-vermelding).
 - 2026-09-10 (export v9) — Positioneringsronde "wat kom je brengen". Nieuwe hero-quote: "I build concepts, companies and innovations that inspire and connect millions of people, and move society forward." met Adformatie-attributieregel (2020) eronder. Nieuwe sectie **WHAT I BRING** (nav-item PROFILE → #bring) met vier tegels: Builder ("Three months, not two years."), Connector ("A network that opens doors."), Inspirator ("I can sell an idea."), Anchor ("Rots in de branding"). Verder: P&L expliciet (Builder + Story), VR Cinema nu "20 locations in 10 countries" (was 15+), Let's Copilot "100K+ users worldwide", stats-tegel "AGENCY BUILT & SOLD" → "DIGITAL AGENCY BUILT", "3BN GLOBAL MEDIA REACH", ticker "WORK IN 10+ COUNTRIES", e-mail jip@samhoud.nl → **jip@samhoud.com** (mailto, zichtbaar, JSON-LD, werkafspraak punt 6). llms.txt door Claude Code bijgewerkt met hero-quote, capabilities, VR-cijfers, P&L en nieuw e-mailadres. NB Claude Code: nieuwe cijfers (20 locaties/10 landen) zijn niet extern verifieerbaar — aangeleverd door Jip via Design.
