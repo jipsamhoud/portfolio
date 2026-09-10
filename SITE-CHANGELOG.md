@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-*(geen openstaande punten — export v9 van 10-09 heeft alles verwerkt)*
+- **2026-09-10 — DOMEINMIGRATIE: jipsamhoud.com is nu het hoofddomein.** Alle verwijzingen (canonical, og:url, og:image, twitter:image, JSON-LD, sitemap, robots, llms.txt) staan op jipsamhoud.com; jipsamhoud.nl stuurt permanent door met 301 en padbehoud. Werkafspraak punt 5 is omgedraaid. **Designtaak: de og-card-afbeelding toont nog "JIPSAMHOUD.NL"** — graag een nieuwe kaart met JIPSAMHOUD.COM en het `?v=`-nummer ophogen naar v4. Check ook of "jipsamhoud.nl" nog ergens in ontwerpteksten voorkomt.
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
 

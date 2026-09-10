@@ -3,4 +3,4 @@ Allow: /
 Allow: /robots.txt
 Disallow: /r
 
-Sitemap: https://jipsamhoud.nl/sitemap.xml
+Sitemap: https://jipsamhoud.com/sitemap.xml
