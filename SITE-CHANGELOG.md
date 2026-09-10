@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-- 2026-08-31 — Beschikbaarheid geactualiseerd nu het september is (samenvalt met de publieke aankondiging): hero-badge "AVAILABLE FROM SEPTEMBER 2026" → "AVAILABLE NOW"; contact-sectie "Building the next chapter from September 2026." → "Building the next chapter, starting now."; zelfde wijziging in llms.txt. Neem "AVAILABLE NOW" over als vaste badge-tekst.
+*(geen openstaande punten — export v9 van 10-09 heeft alles verwerkt)*
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
 
@@ -19,6 +19,9 @@
 - **Cloudflare Web Analytics RUM** (31-08) staat van "Enable, excluding visitor data in the EU" op **"Enable"**. Zonder die wijziging werd er voor EU-bezoekers géén meetcode geladen en was vrijwel al het verkeer onzichtbaar. Cookieloos, geen banner nodig.
 
 ## Verwerkt in Design
+
+- 2026-09-10 (export v9) — Positioneringsronde "wat kom je brengen". Nieuwe hero-quote: "I build concepts, companies and innovations that inspire and connect millions of people, and move society forward." met Adformatie-attributieregel (2020) eronder. Nieuwe sectie **WHAT I BRING** (nav-item PROFILE → #bring) met vier tegels: Builder ("Three months, not two years."), Connector ("A network that opens doors."), Inspirator ("I can sell an idea."), Anchor ("Rots in de branding"). Verder: P&L expliciet (Builder + Story), VR Cinema nu "20 locations in 10 countries" (was 15+), Let's Copilot "100K+ users worldwide", stats-tegel "AGENCY BUILT & SOLD" → "DIGITAL AGENCY BUILT", "3BN GLOBAL MEDIA REACH", ticker "WORK IN 10+ COUNTRIES", e-mail jip@samhoud.nl → **jip@samhoud.com** (mailto, zichtbaar, JSON-LD, werkafspraak punt 6). llms.txt door Claude Code bijgewerkt met hero-quote, capabilities, VR-cijfers, P&L en nieuw e-mailadres. NB Claude Code: nieuwe cijfers (20 locaties/10 landen) zijn niet extern verifieerbaar — aangeleverd door Jip via Design.
+- 2026-08-31 — Beschikbaarheid: hero-badge "AVAILABLE NOW", contact "Building the next chapter, starting now." (verwerkt in export v9).
 
 - 2026-08-31 (export v8) — Alle openstaande punten verwerkt: de drie head-/a11y-regels (`lang`, `author`, `noopener`) staan nu vast in de export, de tickerregel is overgenomen, Beyond Business heeft een eigen achtergrondtint + dubbele topline, en de og-card gebruikt middenpunten. Daarbovenop zelf opgepakt: **CLS-fix** (fonts vroeg uit de statische head, `display=optional`, vaste navigatiehoogte van 48px) en een hero-badge.
 
