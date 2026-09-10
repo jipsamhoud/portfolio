@@ -8,6 +8,10 @@
 
 ## Nog niet verwerkt in Design
 
+- **2026-09-10 — MOBIELE FIXES (drie stuks, graag overnemen in de Design-bron — anders draait de volgende export ze terug).** Jip zag op mobiel dat de Story-teksten (o.a. &samhoud en &samhoud creative tech) in een smalle kolom geperst stonden; volledige mobiele check leverde drie problemen op, alle drie gefixt in de helmet-CSS/markup:
+  1. **Story-rijen**: de regel `[data-tl-row] { grid-template-columns: 1fr !important; gap: 8px !important; }` stond in het `@media (hover: hover)`-blok (= muis-apparaten) en gold dus juist NIET op touch/mobiel. Regel verplaatst naar buiten de media query (geldt nu overal). NB: desktop toonde hierdoor al sinds 13-07 de gestapelde variant — het inline 3-koloms-grid op de rijen is de facto dode code; keuze aan Design om dat op te ruimen of alsnog een 3-koloms-desktopvariant te maken.
+  2. **Navigatie**: op smalle schermen viel CONTACT rechts buiten beeld (menu-div wrapte niet). Toegevoegd in het 760px-blok: `#site-nav > div { flex-wrap: wrap; justify-content: center; row-gap: 6px; }`.
+  3. **Kleine awardlijst** (onder de vier award-tegels): bij het wrappen vielen de losse "·"-separators op regelbegin en braken lange items lelijk. De lijst-div heeft nu `data-award-list` en in het 760px-blok: `flex-direction: column; gap: 10px;` + separators (`span:nth-child(even)`) verborgen. Desktop ongewijzigd.
 - **2026-09-10 — kleine designtaak (gezien bij deploy v11):** het JSON-LD `jobTitle` zegt nog "Brand Builder, Commercial Leader & Pioneer in Creativity × Technology" — zonder "Venture". Graag in de volgende export gelijktrekken met de nieuwe positionering ("Brand & Venture Builder …").
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)

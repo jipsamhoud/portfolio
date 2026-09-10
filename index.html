@@ -73,6 +73,11 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
       #work [data-reveal][style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
       #work [data-reveal] > div:has(> img[data-parallax]) { order: -1; }
       #site-nav { flex-wrap: wrap; justify-content: center; row-gap: 8px; height: auto; padding-top: 10px; padding-bottom: 10px; }
+      /* menu-items zelf ook laten wrappen; anders valt CONTACT rechts buiten beeld */
+      #site-nav > div { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+      /* kleine awardlijst: één award per regel, puntjes-separators verbergen */
+      [data-award-list] { flex-direction: column; gap: 10px; }
+      [data-award-list] > span:nth-child(even) { display: none; }
       [data-hero-caption] { position: static !important; max-width: 100% !important; margin-top: 10px; animation: none !important; opacity: 1 !important; transform: none !important; }
       [data-hero-photo-wrap] { width: 92vw !important; margin-top: -0.3em !important; }
       #top { display: flex; flex-direction: column; }
@@ -84,8 +89,11 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
     }
     @media (hover: hover) {
       [data-marquee]:hover { animation-play-state: paused; }
-      [data-tl-row] { grid-template-columns: 1fr !important; gap: 8px !important; }
     }
+    /* Story-rijen stapelen op ELK apparaat. Stond eerst per abuis in het
+       (hover: hover)-blok, waardoor mobiel (touch) het inline 3-koloms-grid
+       hield en de beschrijving in een smalle kolom werd geperst. */
+    [data-tl-row] { grid-template-columns: 1fr !important; gap: 8px !important; }
   </style>
 </helmet>
 
@@ -505,7 +513,7 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
           <div style="font-family: 'Newsreader', serif; font-size: 15px; line-height: 1.6; color: #45454d;">&amp;samhoud creative tech.</div>
         </div>
       </div>
-      <div data-reveal style="display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: clamp(20px, 2.6vw, 32px); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #45454d;">
+      <div data-reveal data-award-list style="display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: clamp(20px, 2.6vw, 32px); font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: #45454d;">
         <span>NEERLANDS HOOP 2017</span><span>·</span><span>FD TOP 50 ENTREPRENEURIAL TALENTS 2016</span><span>·</span><span>BRIGHT VR AWARD 2015</span><span>·</span><span>SPIN AWARDS 2014</span><span>·</span><span>CINEQUEST 2012</span><span>·</span><span>SPROUT 25 UNDER 25 2011</span>
       </div>
     </div>
