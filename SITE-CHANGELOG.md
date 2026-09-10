@@ -1,4 +1,4 @@
-# Site-changelog — jipsamhoud.nl
+# Site-changelog — jipsamhoud.com
 
 > Werklaag-document. Elke aanpassing die via Claude Code (dus buiten Claude Design
 > om) aan de live site wordt gedaan, komt hier als regel bij. Vóór een nieuwe
@@ -8,7 +8,7 @@
 
 ## Nog niet verwerkt in Design
 
-- **2026-09-10 — DOMEINMIGRATIE: jipsamhoud.com is nu het hoofddomein.** Alle verwijzingen (canonical, og:url, og:image, twitter:image, JSON-LD, sitemap, robots, llms.txt) staan op jipsamhoud.com; jipsamhoud.nl stuurt permanent door met 301 en padbehoud. Werkafspraak punt 5 is omgedraaid. **Designtaak: de og-card-afbeelding toont nog "JIPSAMHOUD.NL"** — graag een nieuwe kaart met JIPSAMHOUD.COM en het `?v=`-nummer ophogen naar v4. Check ook of "jipsamhoud.nl" nog ergens in ontwerpteksten voorkomt.
+- (leeg)
 
 ## Infrastructuur — LET OP bij Design (raakt index.html niet, maar wel de site)
 
@@ -20,6 +20,8 @@
 
 ## Verwerkt in Design
 
+- 2026-09-10 (export v10) — Adformatie-attributie zonder jaartal: "JIP SAMHOUD: FROM STARTUP TO MARKETING PIONEER IN SIX YEARS" · ADFORMATIE (link ongewijzigd). Verder identiek aan live v9. llms.txt gecontroleerd: daar stond geen jaartal.
+- 2026-09-10 — DOMEINMIGRATIE: jipsamhoud.com is nu het hoofddomein. Alle verwijzingen (canonical, og:url, og:image, twitter:image, JSON-LD, sitemap, robots, llms.txt) staan op jipsamhoud.com; jipsamhoud.nl stuurt permanent door met 301 en padbehoud. Werkafspraak punt 5 is omgedraaid. Designtaak gedaan in export v10: nieuwe og-card (assets/og-card.jpg) met JIPSAMHOUD.COM, ?v=4 in og:image, twitter:image en JSON-LD image; "jipsamhoud.nl" komt in ontwerpteksten alleen nog voor in werkafspraak punt 5 (redirect-vermelding).
 - 2026-09-10 (export v9) — Positioneringsronde "wat kom je brengen". Nieuwe hero-quote: "I build concepts, companies and innovations that inspire and connect millions of people, and move society forward." met Adformatie-attributieregel (2020) eronder. Nieuwe sectie **WHAT I BRING** (nav-item PROFILE → #bring) met vier tegels: Builder ("Three months, not two years."), Connector ("A network that opens doors."), Inspirator ("I can sell an idea."), Anchor ("Rots in de branding"). Verder: P&L expliciet (Builder + Story), VR Cinema nu "20 locations in 10 countries" (was 15+), Let's Copilot "100K+ users worldwide", stats-tegel "AGENCY BUILT & SOLD" → "DIGITAL AGENCY BUILT", "3BN GLOBAL MEDIA REACH", ticker "WORK IN 10+ COUNTRIES", e-mail jip@samhoud.nl → **jip@samhoud.com** (mailto, zichtbaar, JSON-LD, werkafspraak punt 6). llms.txt door Claude Code bijgewerkt met hero-quote, capabilities, VR-cijfers, P&L en nieuw e-mailadres. NB Claude Code: nieuwe cijfers (20 locaties/10 landen) zijn niet extern verifieerbaar — aangeleverd door Jip via Design.
 - 2026-08-31 — Beschikbaarheid: hero-badge "AVAILABLE NOW", contact "Building the next chapter, starting now." (verwerkt in export v9).
 
@@ -53,6 +55,8 @@ Doel: de lezer is een senior executive die 20 seconden kijkt. Rode draad: "nieuw
 - 2026-07-13 — Contact-sectie, zin onder "LET'S TALK.": "Building the next chapter from September 2026. Looking for what's next? Let's build and innovate together." (zat in de Design-export van 13-07).
 
 ## Infrastructuur (hoeft niet naar Design)
+
+- 2026-09-10 — E-MAIL: Cloudflare Email Routing actief op beide zones. info@jipsamhoud.com en info@jipsamhoud.nl sturen door naar jip@samhoud.com (bestemming geverifieerd). MX/SPF/DKIM-records automatisch door Cloudflare gezet ("Locked"); catch-all staat op beide zones uit (Drop/Disabled). Gratis tier, alleen doorsturen — verzenden vanaf info@ kan hiermee niet.
 
 - 2026-07-15 — SEO: sitemap.xml en robots.txt (met sitemap-verwijzing) toegevoegd; JSON-LD Person-schema gekopieerd naar de statische head (stond alleen in het helmet-blok). Hoort bij de vaste head-tags-stap bij elke deploy.
 
