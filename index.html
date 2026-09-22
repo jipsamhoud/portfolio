@@ -74,8 +74,9 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
       #work [data-reveal][style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
       #work [data-reveal] > div:has(> img[data-parallax]) { order: -1; }
       #site-nav { flex-wrap: wrap; justify-content: center; row-gap: 8px; height: auto; padding-top: 10px; padding-bottom: 10px; }
-      /* menu-items zelf ook laten wrappen; anders valt CONTACT rechts buiten beeld */
-      #site-nav > div { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+      /* menu op één regel houden: compacter zetten zodat alle zes items passen
+         (wrappen zette CONTACT op een eigen regel; overflow kapte hem eerst af) */
+      #site-nav > div { flex-wrap: nowrap; justify-content: center; gap: clamp(6px, 2vw, 12px) !important; font-size: clamp(8px, 2.4vw, 10px) !important; letter-spacing: 0.12em !important; }
       /* kleine awardlijst: één award per regel, puntjes-separators verbergen */
       [data-award-list] { flex-direction: column; gap: 10px; }
       [data-award-list] > span:nth-child(even) { display: none; }
