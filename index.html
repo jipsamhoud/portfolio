@@ -95,6 +95,13 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
        (hover: hover)-blok, waardoor mobiel (touch) het inline 3-koloms-grid
        hield en de beschrijving in een smalle kolom werd geperst. */
     [data-tl-row] { grid-template-columns: 1fr !important; gap: 8px !important; }
+    /* Portret-filmstrip (Beyond Business): scroll-snap, scrollbalk verborgen */
+    [data-photo-strip] { scrollbar-width: none; }
+    [data-photo-strip]::-webkit-scrollbar { display: none; }
+    [data-strip-prev]:hover, [data-strip-next]:hover { background: #101014 !important; color: #f4f3ef !important; }
+    @media (max-width: 760px) {
+      [data-photo-strip] > div { width: 76vw !important; }
+    }
   </style>
 </helmet>
 
@@ -577,13 +584,27 @@ WERKAFSPRAAK (niet verwijderen — volledige versie in CLAUDE.md van het Design-
         </div>
       </div>
       <div data-reveal style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; border-top: 1px solid #101014; padding-top: 18px; margin-bottom: clamp(14px, 2vw, 22px);">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #3554f4;">PORTRAITS SHOT BY ME · FROM MY PHOTO BOOK "TOGETHER WE BUILD THE NETHERLANDS"</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #45454d;">NL2025 · 2025</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.24em; color: #3554f4;">PORTRAITS SHOT BY ME · FROM MY PHOTO BOOK <a href="https://www.bol.com/nl/nl/p/samen-maken-we-nederland/9300000193435563/" target="_blank" rel="noopener" style="color: #3554f4; text-decoration: underline; text-underline-offset: 3px;">"TOGETHER WE BUILD THE NETHERLANDS" ↗</a></div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #45454d;">NL2025 · 2025</div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button type="button" data-strip-prev aria-label="Previous portraits" style="width: 34px; height: 34px; background: none; border: 1px solid #101014; color: #101014; font-family: 'JetBrains Mono', monospace; font-size: 14px; cursor: pointer; line-height: 1;">←</button>
+            <div data-strip-counter style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: #45454d; min-width: 52px; text-align: center;">01 / 10</div>
+            <button type="button" data-strip-next aria-label="Next portraits" style="width: 34px; height: 34px; background: none; border: 1px solid #101014; color: #101014; font-family: 'JetBrains Mono', monospace; font-size: 14px; cursor: pointer; line-height: 1;">→</button>
+          </div>
+        </div>
       </div>
-      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(14px, 2vw, 24px);">
-        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-1.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
-        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-2.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
-        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04);"><img loading="lazy" src="assets/photo-3.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+      <div data-reveal data-photo-strip style="display: flex; gap: clamp(14px, 2vw, 24px); overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-1.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-2.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-3.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-4.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-5.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-6.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-7.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-8.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-9.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+        <div style="aspect-ratio: 4/5; filter: grayscale(1) contrast(1.08) brightness(1.04); flex: 0 0 auto; width: clamp(230px, 29%, 400px); scroll-snap-align: start;"><img loading="lazy" src="assets/photo-10.webp" alt="Portrait from Together We Build The Netherlands" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
       </div>
     </div>
   </div>
@@ -748,6 +769,31 @@ class Component extends DCLogic {
     }
   }
 }
+</script>
+<script>
+// Portret-filmstrip: pijltjes + teller. Bewust met event-delegatie op document,
+// zodat het blijft werken als de render-runtime de DOM opnieuw opbouwt.
+(function () {
+  function strip() { return document.querySelector('[data-photo-strip]'); }
+  function step(s) { var slide = s.firstElementChild; return slide ? slide.getBoundingClientRect().width + 20 : s.clientWidth * 0.3; }
+  document.addEventListener('click', function (e) {
+    var prev = e.target.closest('[data-strip-prev]');
+    var next = e.target.closest('[data-strip-next]');
+    if (!prev && !next) return;
+    var s = strip(); if (!s) return;
+    s.scrollBy({ left: (next ? 1 : -1) * step(s), behavior: 'smooth' });
+  });
+  function updateCounter() {
+    var s = strip(); var c = document.querySelector('[data-strip-counter]');
+    if (!s || !c) return;
+    var n = s.children.length;
+    var i = Math.min(n, Math.round(s.scrollLeft / step(s)) + 1);
+    c.textContent = String(i).padStart(2, '0') + ' / ' + String(n).padStart(2, '0');
+  }
+  document.addEventListener('scroll', function (e) { if (e.target && e.target.hasAttribute && e.target.hasAttribute('data-photo-strip')) updateCounter(); }, true);
+  window.addEventListener('resize', updateCounter);
+  document.addEventListener('DOMContentLoaded', updateCounter);
+})();
 </script>
 </body>
 </html>
